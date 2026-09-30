@@ -5,9 +5,9 @@ Aplikasi ini adalah implementasi sistem transmisi data terenkripsi dua arah anta
 
 ---
 
-## 📌 Kesesuaian dengan Ketentuan Tugas Dosen
+## 📌 Kesesuaian dengan Ketentuan Tugas 
 
-| Ketentuan Dosen | Implementasi dalam Proyek Ini |
+| Ketentuan | Implementasi dalam Proyek Ini |
 |---|---|
 | **1. Komunikasi Dua Arah** | Menggunakan arsitektur TCP Socket dengan sistem multi-threading (`threading.Thread`) di kedua sisi, memungkinkan Alice dan Bob saling mengirim dan menerima pesan secara simultan (*full-duplex*). |
 | **2. Pengelolaan Key (Pre-Shared Key)** | Kunci simetris 64-bit (`KunciDES`) telah disepakati dan disimpan di memori lokal masing-masing perangkat. **Kunci sama sekali tidak pernah dikirimkan** melalui transmisi jaringan. |
@@ -76,7 +76,7 @@ Untuk membuktikan ke asisten dosen bahwa kode telah teruji secara sistematis:
 
 ---
 
-## 🎓 Contekan Tanya Jawab Asdos (Topik Algoritma DES)
+## 🎓 Tanya Jawab
 
 Berikut adalah pertanyaan yang sering diajukan saat demo DES:
 
