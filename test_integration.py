@@ -16,7 +16,7 @@ import time
 from cipher import encrypt, decrypt
 
 TEST_PORT = 5055
-TEST_KEY = "KunciRahasiaKI2026"
+TEST_KEY = "KunciDES"
 
 def run_integration_test():
     print("="*60)

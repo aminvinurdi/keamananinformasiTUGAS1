@@ -1,13 +1,12 @@
 """
 ================================================================================
-PROGRAM PIHAK B (BOB) - KOMUNIKASI DUA ARAH TERENKRIPSI
+PROGRAM PIHAK B (BOB) - KOMUNIKASI DUA ARAH TERENKRIPSI (DES MANUAL)
 Mata Kuliah: Keamanan Informasi (KI)
 ================================================================================
 Peran:
 - Bertindak sebagai Client Connector (menghubungi Alice).
-- Memiliki 2 Thread independen:
-    1. Thread Receiver (Mendengarkan data ciphertext masuk dari jaringan).
-    2. Thread Sender / Main (Membaca input teks user, mengenkripsi, dan mengirim).
+- Menggunakan Algoritma DES (Data Encryption Standard) 16-Round Manual.
+- Memiliki 2 Thread independen (Receiver & Sender).
 - Menggunakan Pre-Shared Key yang sama dengan Alice.
 - Kunci TIDAK PERNAH dikirimkan melalui kabel jaringan.
 ================================================================================
@@ -18,8 +17,8 @@ import threading
 import sys
 from cipher import encrypt, decrypt
 
-# Kunci Rahasia Default (Pre-Shared Key)
-DEFAULT_KEY = "KunciRahasiaKI2026"
+# Kunci Rahasia Default DES (Pre-Shared Key 8 Karakter / 64-bit)
+DEFAULT_KEY = "KunciDES"
 DEFAULT_HOST = "127.0.0.1"
 DEFAULT_PORT = 5000
 
